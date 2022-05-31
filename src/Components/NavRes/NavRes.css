@@ -1,0 +1,32 @@
+.navRes {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .navRes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    padding: 10px 15px 15px 15px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    justify-content: space-evenly;
+  }
+
+  .navRes__button {
+    color: #c1c1c1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .navRes__button:hover {
+    color: #f1f1f1;
+  }
+}
